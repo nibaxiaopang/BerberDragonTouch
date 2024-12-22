@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeCell" id="KGk-i7-Jjw" customClass="HomeCell" customModule="Berber_Touch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33d-ro-2DN">
+                        <rect key="frame" x="10" y="10" width="330" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cell 2" translatesAutoresizingMaskIntoConstraints="NO" id="ZfH-Px-oCb">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="180"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a9-Rx-nSN">
+                                <rect key="frame" x="10" y="75.666666666666671" width="310" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7a9-Rx-nSN" firstAttribute="leading" secondItem="33d-ro-2DN" secondAttribute="leading" constant="10" id="4Uq-Us-puR"/>
+                            <constraint firstAttribute="trailing" secondItem="7a9-Rx-nSN" secondAttribute="trailing" constant="10" id="9ah-X9-LWa"/>
+                            <constraint firstItem="ZfH-Px-oCb" firstAttribute="leading" secondItem="33d-ro-2DN" secondAttribute="leading" id="AoB-vy-XFU"/>
+                            <constraint firstAttribute="trailing" secondItem="ZfH-Px-oCb" secondAttribute="trailing" id="WxY-Qf-uv4"/>
+                            <constraint firstAttribute="bottom" secondItem="ZfH-Px-oCb" secondAttribute="bottom" id="dFM-6y-8Lb"/>
+                            <constraint firstItem="7a9-Rx-nSN" firstAttribute="centerY" secondItem="33d-ro-2DN" secondAttribute="centerY" id="upw-vA-xrj"/>
+                            <constraint firstItem="ZfH-Px-oCb" firstAttribute="top" secondItem="33d-ro-2DN" secondAttribute="top" id="z9b-as-hbt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="33d-ro-2DN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="f7L-dp-Iik"/>
+                    <constraint firstAttribute="trailing" secondItem="33d-ro-2DN" secondAttribute="trailing" constant="10" id="gKp-uO-Nus"/>
+                    <constraint firstAttribute="bottom" secondItem="33d-ro-2DN" secondAttribute="bottom" constant="10" id="nrh-KZ-SM7"/>
+                    <constraint firstItem="33d-ro-2DN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="s8W-b2-OVs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblMain" destination="7a9-Rx-nSN" id="UMP-07-Aay"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Cell 2" width="826" height="551"/>
+    </resources>
+</document>
