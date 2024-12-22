@@ -23,33 +23,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="rSj-6W-CjC">
-                                <rect key="frame" x="20" y="40" width="280" height="200"/>
+                                <rect key="frame" x="20" y="40" width="280" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="L8e-Du-Xt6"/>
+                                    <constraint firstAttribute="height" constant="100" id="L8e-Du-Xt6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRq-pb-PgW">
-                                <rect key="frame" x="20" y="210" width="280" height="39"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World of Berber Calligraphy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3N-xU-RUj">
-                                <rect key="frame" x="20" y="249" width="280" height="23.5"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berber Dragon Touch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxX-gx-lU0">
-                                <rect key="frame" x="20" y="292.5" width="280" height="29"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
-                                <color key="textColor" systemColor="systemPinkColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULa-TG-DES">
-                                <rect key="frame" x="20" y="351.5" width="280" height="180"/>
+                                <rect key="frame" x="20" y="360" width="280" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="leL-3L-1lI"/>
+                                    <constraint firstAttribute="height" constant="150" id="leL-3L-1lI"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="Get"/>
@@ -57,31 +39,34 @@
                                     <action selector="Go:" destination="gKV-uj-Shq" eventType="touchUpInside" id="8tK-Yl-Po2"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Mvy-nG-HrC">
+                                <rect key="frame" x="60" y="140" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8UG-Fw-KOK"/>
+                                    <constraint firstAttribute="width" constant="200" id="P0e-CD-8Ns"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EGn-pG-KOf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="S3N-xU-RUj" firstAttribute="leading" secondItem="EGn-pG-KOf" secondAttribute="leading" constant="20" id="Fcw-oY-2Vu"/>
-                            <constraint firstItem="EGn-pG-KOf" firstAttribute="trailing" secondItem="RxX-gx-lU0" secondAttribute="trailing" constant="20" id="NRN-Kd-27C"/>
-                            <constraint firstItem="RxX-gx-lU0" firstAttribute="top" secondItem="S3N-xU-RUj" secondAttribute="bottom" constant="20" id="Oa2-IE-aDO"/>
-                            <constraint firstItem="ULa-TG-DES" firstAttribute="top" secondItem="RxX-gx-lU0" secondAttribute="bottom" constant="30" id="Pp8-TY-BNV"/>
+                            <constraint firstItem="Mvy-nG-HrC" firstAttribute="centerX" secondItem="4yi-sd-Giz" secondAttribute="centerX" id="KFd-22-cXf"/>
                             <constraint firstItem="ULa-TG-DES" firstAttribute="leading" secondItem="EGn-pG-KOf" secondAttribute="leading" constant="20" id="SdK-31-I2C"/>
                             <constraint firstItem="rSj-6W-CjC" firstAttribute="leading" secondItem="EGn-pG-KOf" secondAttribute="leading" constant="20" id="U38-iq-JmE"/>
-                            <constraint firstItem="EGn-pG-KOf" firstAttribute="trailing" secondItem="IRq-pb-PgW" secondAttribute="trailing" constant="20" id="UG0-jp-z4f"/>
                             <constraint firstItem="7aU-sj-nuu" firstAttribute="leading" secondItem="EGn-pG-KOf" secondAttribute="leading" id="VVZ-Cg-R3N"/>
                             <constraint firstItem="EGn-pG-KOf" firstAttribute="trailing" secondItem="rSj-6W-CjC" secondAttribute="trailing" constant="20" id="aZd-T9-Vhm"/>
                             <constraint firstItem="rSj-6W-CjC" firstAttribute="top" secondItem="EGn-pG-KOf" secondAttribute="top" constant="20" id="cP2-Hw-GtB"/>
                             <constraint firstItem="EGn-pG-KOf" firstAttribute="trailing" secondItem="7aU-sj-nuu" secondAttribute="trailing" id="dmY-Qs-VFc"/>
                             <constraint firstAttribute="bottom" secondItem="7aU-sj-nuu" secondAttribute="bottom" id="eB4-jr-qQb"/>
-                            <constraint firstItem="S3N-xU-RUj" firstAttribute="top" secondItem="IRq-pb-PgW" secondAttribute="bottom" id="fHi-OC-mbb"/>
-                            <constraint firstItem="IRq-pb-PgW" firstAttribute="leading" secondItem="EGn-pG-KOf" secondAttribute="leading" constant="20" id="pps-E8-QLH"/>
+                            <constraint firstItem="ULa-TG-DES" firstAttribute="top" secondItem="Mvy-nG-HrC" secondAttribute="bottom" constant="20" id="kVW-Oq-SBg"/>
                             <constraint firstItem="EGn-pG-KOf" firstAttribute="trailing" secondItem="ULa-TG-DES" secondAttribute="trailing" constant="20" id="ptd-gl-FYA"/>
-                            <constraint firstItem="EGn-pG-KOf" firstAttribute="trailing" secondItem="S3N-xU-RUj" secondAttribute="trailing" constant="20" id="pxQ-Tk-nA4"/>
-                            <constraint firstItem="RxX-gx-lU0" firstAttribute="leading" secondItem="EGn-pG-KOf" secondAttribute="leading" constant="20" id="tBH-jJ-Rfx"/>
-                            <constraint firstItem="IRq-pb-PgW" firstAttribute="top" secondItem="rSj-6W-CjC" secondAttribute="bottom" constant="-30" id="u1q-Xs-72P"/>
                             <constraint firstItem="7aU-sj-nuu" firstAttribute="top" secondItem="4yi-sd-Giz" secondAttribute="top" id="uu7-2Q-qR6"/>
+                            <constraint firstItem="Mvy-nG-HrC" firstAttribute="top" secondItem="rSj-6W-CjC" secondAttribute="bottom" id="v0f-Fo-7j3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getitnowBtn" destination="ULa-TG-DES" id="8Be-da-4rm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWL-DP-AoS" sceneMemberID="firstResponder"/>
             </objects>
@@ -589,6 +574,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="Back"/>
+                                <connections>
+                                    <action selector="backButtonWith_sender:" destination="9Cg-4M-0wl" eventType="touchUpInside" id="kIl-6h-hGJ"/>
+                                </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="5fp-9B-64r">
                                 <rect key="frame" x="150" y="274" width="20" height="20"/>
@@ -607,6 +595,13 @@
                             <constraint firstItem="IIQ-Ki-4lg" firstAttribute="top" secondItem="qHa-it-4ba" secondAttribute="top" id="pab-Sd-qNa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="i1f-LQ-I5M" id="zi0-Rt-6br"/>
+                        <outlet property="bottomCos" destination="TaN-cz-7zg" id="f1B-Xr-JOp"/>
+                        <outlet property="indicatorView" destination="5fp-9B-64r" id="Jo1-KA-swo"/>
+                        <outlet property="topCos" destination="pab-Sd-qNa" id="qSC-yd-Xfw"/>
+                        <outlet property="webView" destination="IIQ-Ki-4lg" id="3bu-Vp-661"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2i-MA-Dra" sceneMemberID="firstResponder"/>
             </objects>
@@ -621,6 +616,7 @@
         <image name="Get" width="960" height="480"/>
         <image name="Share" width="512" height="512"/>
         <image name="Welcome" width="308" height="164"/>
+        <image name="logo" width="1024" height="1024"/>
         <namedColor name="Color">
             <color red="0.60784313725490191" green="0.22352941176470589" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -629,9 +625,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

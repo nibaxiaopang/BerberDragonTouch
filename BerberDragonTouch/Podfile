@@ -6,5 +6,6 @@ target 'BerberDragonTouch' do
   use_frameworks!
 
   # Pods for BerberDragonTouch
-
+  pod 'Firebase/Messaging'
+  pod 'AppsFlyerFramework'
 end
